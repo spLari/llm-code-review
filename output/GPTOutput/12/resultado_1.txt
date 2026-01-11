@@ -1,0 +1,9 @@
+{
+  "winner": "code_2",
+  "reasons": [
+    "code_2 extracts marker creation into a well-named createContextMarker() method, which makes the intent explicit and the initLayer implementation concise and easier to read.",
+    "code_1 contains duplicated/malformed initLayer snippets and inlined creation logic, which is confusing and harms readability.",
+    "Centralizing creation in code_2 reduces duplicated code (initLayer and updateResources both call createContextMarker), improving maintainability and making future changes less error-prone.",
+    "The structure in code_2 follows single-responsibility and separation-of-concerns principles: lifecycle methods orchestrate behavior while helper methods implement details, so it is easier to extend or unit-test."
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "winner": "code_2",
+  "reasons": [
+    "Easier to understand: code_2 extracts the index-existence check into a named helper (assertIndexExistsForDrop), making the high-level flow of indexDrop more readable and separating error translation from control flow.",
+    "Better naming and error handling: code_2 introduces a specific cause (IndexBelongsToConstraintException) and composes a clear DropIndexFailureException with that cause, which makes the failure modes explicit and the intent easier to follow than the inline catch in code_1.",
+    "Improved structure for constraints: code_2 adds a constraint type parameter and filters constraints by type before operating on them, which reduces ambiguity and clarifies which constraints are being considered.",
+    "More maintainable and extensible: the refactoring (helper method and clearer exception types) reduces duplication, centralizes behavior that can be unit-tested independently, and makes future changes (e.g., different existence checks or error messages) easier to apply.",
+    "Readability/stylistic improvements: code_2's smaller focused methods and clearer separation of concerns follow single-responsibility principles, so developers can scan and modify the code with less cognitive load than the denser, inlined logic in code_1."
+  ]
+}

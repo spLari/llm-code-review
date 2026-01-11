@@ -1,0 +1,12 @@
+{
+    "winner": "code_2",
+    "reasons": [
+        "Clearer naming: code_2 uses RDF_N, _rdf_n_uri and makeRDF_i which describe intent better than code_1's _rdf_n and rdf_n; descriptive names improve immediate comprehension.",
+        "Simpler, safer initialization: code_2 preallocates a reasonable initial buffer in a static initializer, avoiding the complicated, error-prone manual resize logic in code_1.",
+        "Better structure / single responsibility: code_2 extracts makeRDF_i, which isolates URI creation and reduces duplication inside the accessor.",
+        "Explicit error checking: code_2 checks for negative indexes and throws a clear exception, making failure modes obvious; code_1 has no such check.",
+        "Documentation and history: code_2 includes a short comment about thread-safety and preserves the old implementation as commented code for context (useful during review/migration).",
+        "Easier to extend: changing initial size or creation behavior in code_2 requires changing a single constant or the factory method; code_1's growth algorithm is harder to reason about and modify.",
+        "Readability of logic: code_2's rdf_n implementation is compact and obvious (return precomputed or make on demand) versus code_1's resizing loop and arithmetic which is harder to follow and more likely to contain bugs."
+    ]
+}

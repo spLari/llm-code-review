@@ -1,0 +1,10 @@
+{
+  "winner": "code_2",
+  "reasons": [
+    "Clearer structure and naming: code_2 separates the non-authorized and authorized flows (getVariableNamesForReports vs getVariableNamesForAuthorizedReports) and introduces a clearly named shared helper (convertReportsToVariableQuery) for the common final mapping. That makes intent easier to grasp at a glance.",
+    "Better reuse and reduced duplication: code_2 centralizes the final stream->map logic in a single method, so changes to filtering/mapping need to be made in one place rather than repeated inline as in code_1.",
+    "Easier to read step-by-step: code_2 builds the full list of report definitions explicitly (even though it collects intermediate results), which is more straightforward for most readers than nested Stream.concat/flatMap logic used in code_1.",
+    "Easier to extend: the clearer decomposition in code_2 (building the list, then delegating to a single converter) makes it simpler to add new preprocessing steps or alternate mapping strategies.",
+    "Minor caveat: code_2 mutates the list returned from the service (addAll) and performs extra collection steps; these are maintainable but should be hardened (copy into a new list, avoid mutating service return values). code_1’s purely-streaming approach avoids that mutation but is less explicit."
+  ]
+}

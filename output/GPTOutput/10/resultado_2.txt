@@ -1,0 +1,10 @@
+{
+  "winner": "code_1",
+  "reasons": [
+    "Code 1 is more declarative and compact: it uses Stream.concat and a single streaming pipeline instead of mutating lists with addAll, which makes the flow of data easier to follow.",
+    "Code 1 avoids temporary collection/mutation; immutability (no intermediate addAll) reduces side effects and potential bugs, improving maintainability.",
+    "Code 2 duplicates the logic for expanding combined reports in two places (non-authorized vs authorized) while also using mutable lists, increasing the chance of inconsistencies when changing behavior.",
+    "The streaming approach in Code 1 makes the transformation and filtering steps (distinct, filter, map) explicit and readable; Code 2 spreads related logic across more helper methods and collectors, which is harder to trace.",
+    "Suggested improvements that would make either version better: extract the combined-report expansion into a clearly named helper, avoid instanceof/casts by using polymorphism if possible, and keep consistent naming (e.g., convertReports... vs convertAuthorizedReports...) so callers’ intent is clearer."
+  ]
+}

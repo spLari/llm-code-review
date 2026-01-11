@@ -1,0 +1,10 @@
+{
+  "winner": "code_2",
+  "reasons": [
+    "Easier to understand: Code 2 isolates the special-case logic into a separate helper (collectSeqFileSize) and checks the enum case (FileSizeConstants.SYS) explicitly, so the main loop in getFileSizesInByte is simpler and the control flow is clearer.",
+    "Better structure and naming: Code 2 cleanly separates responsibilities (storageEngine as the dependency, a dedicated collector method) and uses direct enum references, reducing nested blocks and making intent more obvious than Code 1's mixed logic and larger method body.",
+    "Improved maintainability and extensibility: The extracted method in Code 2 makes it straightforward to add or change handling for specific file kinds, enables easier unit testing of parts, and reduces code duplication compared with Code 1.",
+    "More specific error handling and messaging: Code 2 uses a specific exception type (StorageEngineException) and centralizes error reporting in the helper, improving diagnosability and reducing repeated try/catch scaffolding.",
+    "Minor caveat noted: Code 2 still mutates the passed-in map from the helper for error cases (a side effect), which could be refined, but this is a smaller issue than the structural problems present in Code 1."
+  ]
+}

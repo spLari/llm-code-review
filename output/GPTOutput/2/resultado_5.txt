@@ -1,0 +1,11 @@
+{
+    "winner": "code_2",
+    "reasons": [
+        "Easier to understand: code_2 uses an explicit RDF_N constant and a static initializer to prefill the first N entries, and rdf_n has a simple, readable flow with an explicit negative-index check.",
+        "Better naming and structure: identifiers like _rdf_n_uri, RDF_N, and the helper makeRDF_i are more descriptive than _rdf_n and the ad-hoc resizing logic in code_1, improving readability.",
+        "Clearer error handling: code_2 throws an exception for invalid (negative) indexes rather than silently allowing weird behavior, making bugs easier to detect.",
+        "Separation of concerns: makeRDF_i isolates creation logic, making it easier to change URI formation or add validation in one place.",
+        "Easier to maintain and extend: changing the preallocation size, or replacing the allocation strategy, is straightforward in code_2; the resizing logic in code_1 is more complex and harder to reason about.",
+        "Minor caveat: code_2 contains commented-out legacy resizing code (clutter that should be removed or moved to version control) and currently does not cache indices >= RDF_N (possible performance/semantics difference), but these are manageable compared with the clarity gains."
+    ]
+}

@@ -1,0 +1,10 @@
+{
+  "winner": "code_2",
+  "reasons": [
+    "Easier to understand: code_2 has clear, self-contained methods (testNonEmptySystemExtDirs, newProcessBuilder, fatalError) that express intent; code_1 contains duplicated/malformed fragments and unclear flow (e.g. duplicated fatalError, undefined cpath), which makes it hard to follow.",
+    "Better structure and naming: code_2 separates concerns (building the ProcessBuilder vs invoking the failure assertion) and uses descriptive names, improving readability. It also uses java.nio APIs (Path/Files) for filesystem logic, which is clearer than ad-hoc string handling.",
+    "More maintainable/extendable: modular design in code_2 means adding new checks or changing process-launch details is localized (change newProcessBuilder once). In contrast code_1 mixes responsibilities and contains duplicated code, increasing the risk and cost of future changes.",
+    "Robustness and correctness: code_2 performs explicit directory and file checks and counts JAR files, giving a clearer and more testable implementation. code_1 appears to have syntax/format issues and incomplete logic (e.g. concatenated tokens, missing variables), which would hinder maintenance.",
+    "Minor caveat: code_2 still has small improvements possible (avoid magic strings, construct java binary path via Paths.get(javaHome, \"bin\", \"java\"), handle IOExceptions more explicitly), but overall it is significantly clearer and preferable to code_1."
+  ]
+}

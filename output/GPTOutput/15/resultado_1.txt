@@ -1,0 +1,11 @@
+{
+  "winner": "code_2",
+  "reasons": [
+    "Clearer structure: code_2 extracts the core passivation logic into a small helper (doPassivate), reducing nesting in the public method and making the control flow easier to follow.",
+    "Better separation of concerns: the helper isolates marshaling, writing and stats increment, while passivateAsync handles notification and async composition; this improves readability and makes each piece easier to reason about and test.",
+    "Asynchronous API & flow: passivateAsync explicitly returns a CompletionStage and composes notifications only when needed (notifier.hasListener), which is both more flexible (non-blocking) and an optimization compared with the always-synchronous behavior in code_1.",
+    "Naming & intent: method names (doPassivate, passivateAsync) convey intent and success/failure via a boolean return from the helper, which simplifies error handling and makes extension (retries, alternative store logic) easier.",
+    "Maintainability: smaller, focused functions and explicit async composition reduce cognitive load for future changes (e.g., adding metrics, retries, or different notification semantics).",
+    "Caveat noted: code_2 changes observable behavior (async notifications and conditional notification only if listeners exist). This is typically beneficial but should be validated against expected semantics to ensure it doesn’t introduce regressions."
+  ]
+}

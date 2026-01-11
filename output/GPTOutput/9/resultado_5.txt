@@ -1,0 +1,11 @@
+{
+  "winner": "code_2",
+  "reasons": [
+    "Separation of concerns: code_2 extracts the sequence-file-size logic into a helper (collectSeqFileSize), which makes the main method shorter and easier to read and reason about.",
+    "Abstraction: code_2 uses StorageEngine, a clearer higher-level abstraction than FileNodeManager in code_1, which improves conceptual clarity for future maintainers.",
+    "Readability: code_2's control flow for the special-case (SYS) is explicit and encapsulated, whereas code_1 inlines a specialized loop for SETTLED that increases cognitive load.",
+    "Maintainability: the helper method in code_2 localizes changes (e.g., different directory selection or aggregation strategies) so future extensions are simpler and less error-prone.",
+    "Bug / correctness concerns in code_1: code_1 overwrites settledSize on each iteration and mixes map updates inside the loop/catch in a way that makes the final value and error state unclear (prone to accidental overwrites).",
+    "Consistency note: code_2's logger variable is lower-case (logger) which deviates from the typical static-final LOGGER naming convention used in code_1 — a minor style regression but not a structural problem."
+  ]
+}

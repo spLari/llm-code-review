@@ -1,0 +1,10 @@
+{
+  "winner": "code_2",
+  "reasons": [
+    "Code 2 extracts the deletion logic into a dedicated private method (checkDelete), so poll() is shorter and focused on fetching results — this improves clarity and single-responsibility.",
+    "Code 2 adds @Nullable annotations on the poll methods, making nullability contracts explicit and improving readability and static-analysis support.",
+    "The extracted method makes the deletion behavior easier to test and change without touching the polling flow, improving maintainability and extensibility.",
+    "Overall structure and separation of concerns in Code 2 make it easier to read and reason about; inline branching-heavy logic in Code 1 is harder to follow.",
+    "Minor note: Code 2 uses a shorter variable name (paramSource) which is slightly less descriptive than parameterSource — renaming to parameterSource or giving checkDelete a more descriptive name (e.g., deleteAfterPollIfNeeded) would further improve clarity."
+  ]
+}
