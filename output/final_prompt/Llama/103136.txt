@@ -1,0 +1,10 @@
+```
+{
+  "winner": "code_2",
+  "reasons": [
+    "Improved naming: calculateCapacity is more descriptive than inline calculation",
+    "Better structure: extracted method for capacity calculation enhances readability",
+    "Easier maintenance: clear and separate concerns for capacity calculation and array ensuring"
+  ]
+}
+```

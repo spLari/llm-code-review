@@ -87,7 +87,7 @@ for i, line in enumerate(lines):
       result = prompt(col4, col5)
 
       output_file = os.path.join(
-        folder, f"resultado_{execution}.txt"
+        folder, f"result_{execution}.txt"
       )
 
       with open(output_file, "w", encoding="utf-8") as f:

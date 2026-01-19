@@ -1,0 +1,10 @@
+{
+  "winner": "code_2",
+  "reasons": [
+    "Easier to understand: code_2 adds @Nullable annotations and extracts the deletion/flush logic into a named private method (checkDelete), making the main poll(...) flow shorter and easier to follow.",
+    "Better structure and style: moving side-effecting logic out of poll() enforces single responsibility, reduces nesting in the main method, and gives a clear name to the behavior (checkDelete).",
+    "More maintainable and extensible: the extracted checkDelete(...) can be modified or extended independently (e.g., to add logging, metrics, or different delete strategies) and is easier to unit-test than inlined code.",
+    "Readability trade-offs are minor: code_2 uses a slightly shorter variable name (paramSource) versus parameterSource; this is a small readability cost outweighed by the clearer structure. Keeping consistent, descriptive names (e.g. parameterSource) would be an easy refinement.",
+    "Overall, code_2's clearer nullability contracts and decomposition reduce cognitive load and future change risk, so it is preferable."
+  ]
+}

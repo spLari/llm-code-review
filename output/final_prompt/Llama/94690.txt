@@ -1,0 +1,10 @@
+```
+{
+  "winner": "code_2",
+  "reasons": [
+    "Improved separation of concerns",
+    "Better method naming and responsibility",
+    "Easier to understand and maintain"
+  ]
+}
+```

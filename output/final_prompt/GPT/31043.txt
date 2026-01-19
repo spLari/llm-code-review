@@ -1,0 +1,10 @@
+{
+  "winner": "code_2",
+  "reasons": [
+    "Introduces a protected singleRun delegate, improving testability and making it easier to override or mock the call to SingleJar",
+    "runWorker visibility changed to protected, which aids extensibility and subclassing for tests or future behavior changes",
+    "Delegation reduces direct coupling to SingleJar and centralizes the external call, improving structure and readability",
+    "However, singleRun broadens its throws signature to Exception which is too generic and risks hiding specific error handling needs",
+    "The try/catch in runSingleJar still catches only IOException while singleRun can throw Exception — this mismatch is a likely bug that harms maintainability"
+  ]
+}

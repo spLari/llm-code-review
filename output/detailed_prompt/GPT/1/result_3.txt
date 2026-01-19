@@ -1,0 +1,11 @@
+{
+  "winner": "code_2",
+  "reasons": [
+    "Code 2 is easier to understand: it has clearly named helper methods (testNonEmptySystemExtDirs, newProcessBuilder) that separate concerns, whereas Code 1 contains duplicated/incomplete fragments and ambiguous flow.",
+    "Code 2 uses modern APIs and clearer intent (java.nio Paths/Files, explicit loop to count jars) which improves readability over the ad-hoc, partial code in Code 1.",
+    "Modularity in Code 2 (newProcessBuilder and overloaded fatalError) reduces duplication and makes the launch/assert logic reusable; Code 1 mixes command construction and process handling in an unclear way.",
+    "Code 2 is easier to maintain and extend: isolated functions allow adding new checks or changing process-launch details in one place, while Code 1 would require touching multiple, poorly-structured spots.",
+    "Suggested improvements applicable to both: rename fatalError to a more descriptive name (e.g., assertJvmFails or launchAndAssertJvmFails), extract constant for the tested class name and java binary path, and replace System.out.println with structured logging.",
+    "Code 1 appears to contain syntax/duplication errors (duplicate method headers, missing concatenation) making it fragile; Code 2 is syntactically coherent and thus more robust for future changes."
+  ]
+}

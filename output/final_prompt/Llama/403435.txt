@@ -1,0 +1,11 @@
+```
+{
+  "winner": "code_2",
+  "reasons": [
+    "Code 2 is more readable due to improved structure and naming conventions.",
+    "Code 2 uses specific Tomcat utility classes (Parameters, MessageBytes) for query string parsing, making it more idiomatic and efficient.",
+    "Code 2 separates concerns into parsing query string and merging parameters, improving maintainability.",
+    "Code 1 has a magic string 'ISO88591' which may be a typo, Code 2 avoids this by using a more standard approach to encoding."
+  ]
+}
+```

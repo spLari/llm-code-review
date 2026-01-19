@@ -1,0 +1,11 @@
+```
+{
+  "winner": "code_2",
+  "reasons": [
+    "Code 2 has more cohesive methods with clear responsibilities",
+    "Code 2 properly handles price list version active status in getPriceListVersionEffective method",
+    "Code 2 has BOM price calculation which was mentioned as a lost functionality in Code 1",
+    "Code 2 follows better coding practices with static methods and proper object retrieval"
+  ]
+}
+```

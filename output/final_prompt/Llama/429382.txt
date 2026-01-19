@@ -1,0 +1,11 @@
+```
+{
+  "winner": "code_2",
+  "reasons": [
+    "code_2 has more specific and clear constructor parameters (e.g., protocol, clientMaxStreams) which improve clarity and readability",
+    "code_2 has better separation of concerns with methods like configureHttp2 and configureHttp11",
+    "code_2 supports multiple protocols (HTTP/1.1 and HTTP/2) whereas code_1 only supports a single protocol",
+    "code_2 uses more descriptive variable names (e.g., clientMaxStreams) and has more comments explaining the purpose of the code"
+  ]
+}
+```

@@ -1,0 +1,11 @@
+{
+  "winner": "code_2",
+  "reasons": [
+    "Code 2 is easier to understand because it extracts the clone loops into well-named helper methods (attachClones/detachClones), making the high-level attach/detach flow clearer.",
+    "Code 2 improves structure and style by reducing duplication (the same clone-iteration logic is reused from multiple places) which makes intent and control flow more apparent.",
+    "The new swapData method in Code 2 demonstrates a clear, self-contained operation for swapping node state; it reuses the helper methods so the sequence of detach/swap/reattach is explicit and easy to follow.",
+    "Smaller, single-responsibility methods in Code 2 make the code easier to test, refactor, and extend (e.g., changing clone handling requires edits in one place).",
+    "Both versions have some brittle details (e.g., clones[0].size() check, magic return value in getIndex(), truncated/missing visibility modifiers), but Code 2 localizes clone handling so addressing those issues is simpler.",
+    "Overall maintainability favors Code 2 because clearer names and decomposition lower cognitive load for future changes."
+  ]
+}

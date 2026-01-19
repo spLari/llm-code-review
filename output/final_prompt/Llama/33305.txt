@@ -1,0 +1,11 @@
+```
+{
+  "winner": "code_2",
+  "reasons": [
+    "Improved method naming and structure for better readability",
+    "Extracted a separate method 'doPassivate' for passivation logic, making it easier to understand and maintain",
+    "Introduced async passivation method 'passivateAsync' which returns a CompletionStage, allowing for better handling of asynchronous operations",
+    "Added a check for listeners before notifying cache entry passivated, improving performance"
+  ]
+}
+```

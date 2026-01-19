@@ -1,0 +1,12 @@
+```
+{
+  "winner": "code_2",
+  "reasons": [
+    "Code 2 provides more detailed and specific functionality for writing drawing records to XML.",
+    "The addition of `writeToFile` method in Code 2 makes the code more modular and reusable.",
+    "Code 2 demonstrates better handling of workbook and sheet filtering with `SHEET_NAMES`, `SHEET_IDX`, and `EXCLUDE_WORKBOOK`.",
+    "Code 2 shows improved resource management with try-with-resources statements for both InputStream and OutputStream.",
+    "The use of Java 8 features like streams in `getSheets` method makes the code more concise and readable."
+  ]
+}
+```

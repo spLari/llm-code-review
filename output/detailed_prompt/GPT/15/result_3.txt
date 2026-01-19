@@ -1,0 +1,11 @@
+{
+  "winner": "code_2",
+  "reasons": [
+    "Separation of concerns: persistence logic is extracted to doPassivate, making the main flow easier to read and enabling focused unit testing.",
+    "Better correctness and intent: the second \"passivated\" notification is only sent when persistence succeeds (doPassivate returns true), whereas code_1 notifies the second event even after a failure.",
+    "Asynchronous-friendly design: passivateAsync returns a CompletionStage and composes notifications only when necessary, fitting non-blocking architectures and avoiding blocking callers.",
+    "Performance/readability optimization: checking notifier.hasListener avoids unnecessary asynchronous notification work when there are no listeners.",
+    "Maintainability: smaller, well-named method and clearer control flow (notify -> persist -> notify) makes future changes (error handling, retries, metrics) easier to implement.",
+    "Minor caveat: code_2 introduces async complexity (futures/thenCompose) which is slightly harder to follow than a purely synchronous method, but the modularization offsets this and is preferable for an async API."
+  ]
+}

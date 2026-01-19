@@ -1,0 +1,10 @@
+```
+{
+  "winner": "tie",
+  "reasons": [
+    "Both codes have the same structure and logic.",
+    "Variable names are identical except for 'dummyInfo' vs 'stubInfo'.",
+    "Readability and maintainability are equivalent."
+  ]
+}
+```

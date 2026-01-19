@@ -1,0 +1,10 @@
+{
+  "winner": "code_2",
+  "reasons": [
+    "Introduces a dedicated helper (collectSeqFileSize) which isolates logic, reducing method complexity and improving readability/maintainability",
+    "Uses clearer, conventional naming (storageEngine, logger) which makes intent easier to understand",
+    "Removes duplicated inline logic by centralizing special-case handling (SYS/sequence files) rather than embedding loops inside the main method",
+    "Error logging and exception handling are placed closer to the failing operation, making troubleshooting easier",
+    "Overall structure is more modular and easier to extend (adding new file-kind collectors can be done by adding small methods)"
+  ]
+}

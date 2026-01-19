@@ -1,0 +1,11 @@
+```
+{
+  "winner": "code_2",
+  "reasons": [
+    "Improved encapsulation by extracting a separate method 'singleRun' in Code 2",
+    "Reduced duplication of 'runSingleJar' method in Code 2",
+    "Code 2 has a more consistent and clear structure",
+    "Accessibility modifiers (protected) added in Code 2 for better design"
+  ]
+}
+```

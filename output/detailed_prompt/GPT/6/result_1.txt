@@ -1,0 +1,11 @@
+{
+    "winner": "code_2",
+    "reasons": [
+        "Easier to understand: Code 2 extracts the capacity logic into a named helper (calculateCapacity) which makes the intent explicit versus Code 1's in-place mutation of minCapacity.",
+        "Better naming and structure: calculateCapacity and the delegation in ensureCapacityInternal improve flow and readability (no hidden side-effects), so the control path is clearer.",
+        "Easier to maintain/extend: The extracted function centralizes capacity rules so callers (ensureCapacityInternal and readObject) reuse the same logic; this reduces duplication and the chance of bugs when changing behavior.",
+        "More robust: readObject in Code 2 calls SharedSecrets.getJavaOISAccess().checkArray(...) to validate deserialized array sizes before allocation, improving safety during deserialization.",
+        "Style: Code 2 favors returning values from a pure helper instead of mutating parameters, which is easier to reason about and unit-test.",
+        "Caveat: Code 2 introduces a dependency on an internal API (sun.misc.SharedSecrets), which is acceptable in JDK internals but could be noted if portability outside that context were a concern."
+    ]
+}

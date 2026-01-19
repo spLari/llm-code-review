@@ -1,0 +1,9 @@
+```
+{
+  "winner": "code_1",
+  "reasons": [
+    "more specific verification",
+    "better test clarity"
+  ]
+}
+```

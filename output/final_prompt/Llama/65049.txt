@@ -1,0 +1,10 @@
+```
+{
+  "winner": "code_2",
+  "reasons": [
+    "Code 2 has extracted a method `hideChildMenu` which improves readability and maintainability by reducing duplicated code.",
+    "Code 2 has introduced `expandedMenuItem` which seems to be a more explicit and clear way to track the expanded menu item.",
+    "Code 2 has added ARIA attributes for accessibility, which is a good practice."
+  ]
+}
+```

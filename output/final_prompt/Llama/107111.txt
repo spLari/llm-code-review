@@ -1,0 +1,11 @@
+```
+{
+  "winner": "code_2",
+  "reasons": [
+    "Improved naming convention: Code 2 uses more descriptive variable names, such as 'commonScriptInfo' instead of 'scriptId' and 'params'.",
+    "Better structure: Code 2 encapsulates common script information into a separate object 'CommonScriptInfo', making the code more organized and maintainable.",
+    "Enhanced validation: Code 2 uses more specific validation annotations, such as '@NotBlank', to ensure data integrity.",
+    "Increased readability: Code 2 extracts a separate method 'isEnableCommonScript()' to improve readability and reduce complexity."
+  ]
+}
+```

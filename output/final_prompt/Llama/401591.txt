@@ -1,0 +1,10 @@
+```
+{
+  "winner": "code_2",
+  "reasons": [
+    "more specific error handling",
+    "better error condition mapping",
+    "more informative condition setting"
+  ]
+}
+```

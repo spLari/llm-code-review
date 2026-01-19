@@ -1,0 +1,12 @@
+```
+{
+  "winner": "code_2",
+  "reasons": [
+    "More consistent and clear naming conventions (e.g., 'minIndexInterval' instead of 'indexInterval')",
+    "Improved code organization and structure",
+    "Added more parameters to methods to make them more flexible and reusable (e.g., 'calculateSamplingLevel' and 'downsample')",
+    "Better handling of edge cases (e.g., 'effectiveMinInterval' calculation)",
+    "More accurate and clear variable names and comments"
+  ]
+}
+```

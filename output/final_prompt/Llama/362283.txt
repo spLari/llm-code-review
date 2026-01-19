@@ -1,0 +1,11 @@
+```
+{
+  "winner": "code_2",
+  "reasons": [
+    "Improved naming consistency with 'experimental' prefix",
+    "Better structure with separate ExperimentalCfg class",
+    "More accurate configuration property names (e.g., 'zeebe.broker.experimental.maxAppendsPerFollower')",
+    "Correct unit conversion for maxAppendBatchSize (256KB to bytes)"
+  ]
+}
+```

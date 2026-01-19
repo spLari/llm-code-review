@@ -1,0 +1,12 @@
+{
+  "winner": "code_2",
+  "reasons": [
+    "Easier to understand: code_2 separates concerns into small, well-named methods (convertReportsToVariableQuery, convertAuthorizedReportsToVariableQuery), so the high-level flow is clearer than the denser stream logic in code_1.",
+    "Better structure and naming: code_2 centralizes the final streaming/filtering/mapping into a single helper, reducing duplication and making the intent (convert reports -> variable query) explicit.",
+    "Easier to maintain and extend: by factoring shared behavior into a single convertReportsToVariableQuery(Function, List) method, changes to filtering/mapping need to be made in one place rather than repeated.",
+    "Readability: code_2's stepwise approach (fetch reports, expand combined reports, then convert) maps to how readers typically reason about the problem, improving on code_1's inline Stream.concat and combined-stream construction.",
+    "Reusability: code_2 provides both authorized and non-authorized entry points that reuse the same conversion logic, which makes adding other variants simpler.",
+    "Minor caution: code_2 mutates the lists returned by the service (addAll), which may be unsafe if those lists are immutable—this is an implementation detail to fix (e.g., copy into a new ArrayList) but does not outweigh the structural benefits.",
+    "Note on code_1 strength: code_1 avoids list mutation and uses streaming concat which is slightly safer from a side-effect perspective; consider adopting that immutability in code_2 (copy before addAll or use Stream.concat) to get the best of both."
+  ]
+}

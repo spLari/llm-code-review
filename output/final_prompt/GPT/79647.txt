@@ -1,0 +1,10 @@
+{
+  "winner": "code_2",
+  "reasons": [
+    "Introduces a named DEFAULT_UNSET and an overloaded toString(AccessibilityPreferences) so callers can provide explicit defaults—improves clarity and extensibility.",
+    "No-arg toString delegates to the parametrized version, centralizing formatting logic and reducing duplication.",
+    "Using fields from a default instance is clearer than relying on a NOT_SET literal sentinel scattered in the method.",
+    "Both snippets contain structural/formatting issues (misplaced @Override/hashCode/toString blocks) that make them syntactically incorrect and hurt maintainability.",
+    "DEFAULT_UNSET is not final/immutable in code_2 (should be final/immutable); this undermines the improvement but is fixable without changing the overall design."
+  ]
+}

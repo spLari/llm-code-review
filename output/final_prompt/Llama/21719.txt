@@ -1,0 +1,12 @@
+```
+{
+  "winner": "code_2",
+  "reasons": [
+    "Improved encapsulation by adding getter methods for types and directions",
+    "Extracted a separate method getRelationshipsForMultipleTypes for better readability and maintainability",
+    "Introduced a protected method newExpander for more flexibility and testability",
+    "Consistent use of protected constructors and methods for inheritance",
+    "Better separation of concerns"
+  ]
+}
+```

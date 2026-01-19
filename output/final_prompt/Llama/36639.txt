@@ -1,0 +1,12 @@
+```
+{
+  "winner": "code_2",
+  "reasons": [
+    "Improved method extraction for better readability (e.g., `showFolderOptionMenu`, `isRootFolder`, `updateTitle`)",
+    "Reduced duplicated code in `onOptionsItemSelected` and `onBackPressed`",
+    "Added a `getCurrentTrackGroup` method to encapsulate `selectedFolder` logic",
+    "Better organization of related logic (e.g., `updateContent` and `updateTitle` are separate methods)",
+    "Some null checks have been added or improved (e.g., `rootFolder` in `restoreState`)"
+  ]
+}
+```

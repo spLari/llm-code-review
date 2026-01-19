@@ -1,0 +1,10 @@
+{
+  "winner": "code_2",
+  "reasons": [
+    "Removes repeated request-building by introducing createChangePasswordRequest helper, reducing duplication and improving readability.",
+    "Better test names and an added focused test (resetPassword_ReturnsUnprocessableEntity_NewPasswordSameAsOld) increase clarity of intent and coverage.",
+    "Parameterized helper (password/passwordConfirmation, useCSRF) makes tests easier to extend and maintain.",
+    "Uses explicit view/model assertions and imports (view(), model()) which make expected outcomes more explicit and tests more descriptive.",
+    "Overall structure and extraction of common logic improve maintainability and reduce risk of bugs when changing request parameters."
+  ]
+}

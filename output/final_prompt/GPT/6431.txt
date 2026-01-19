@@ -1,0 +1,10 @@
+{
+  "winner": "code_2",
+  "reasons": [
+    "Introduces a single helper (getPreviousParameter) extracting duplicated logic, improving readability and reducing repetition.",
+    "Encapsulating the previous-parameter lookup into a private static method makes the intent clearer and the parsing method shorter.",
+    "Using a single call to setPrevious(...) in both code paths centralizes behavior so future changes are easier to make and less error-prone.",
+    "Helper method improves testability and separation of concerns (lookup logic vs. parsing flow).",
+    "Overall structure and naming in code_2 make the code easier to scan and maintain compared with the inline loop in code_1."
+  ]
+}

@@ -1,0 +1,10 @@
+```
+{
+  "winner": "code_2",
+  "reasons": [
+    "More flexible and reusable method",
+    "Improved separation of concerns",
+    "Easier to test and maintain"
+  ]
+}
+```

@@ -1,0 +1,11 @@
+```
+{
+  "winner": "code_2",
+  "reasons": [
+    "Code 2 has a more clear and concise structure, with extracted methods (e.g., internalGet, internalAdd) that improve readability.",
+    "Code 2 has better concurrency control in the putIfAbsent method, with explicit lock acquisition and release.",
+    "Code 2 handles exceptions more consistently, with a separate catch block for LegacyIndexNotFoundKernelException.",
+    "Code 2 has more descriptive variable names and method calls (e.g., single, legacyIndexResourceId)."
+  ]
+}
+```

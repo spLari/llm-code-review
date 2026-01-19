@@ -1,0 +1,5 @@
+Exception: 429 Client Error: Too Many Requests for url: https://openrouter.ai/api/v1/chat/completions
+Status: 429
+
+--- response body ---
+{"error":{"message":"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day","code":429,"metadata":{"headers":{"X-RateLimit-Limit":"50","X-RateLimit-Remaining":"0","X-RateLimit-Reset":"1756857600000"},"provider_name":null}},"user_id":"user_327YbWp3Wzw7BmnGEFQlckDQLTj"}

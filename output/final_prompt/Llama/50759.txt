@@ -1,0 +1,11 @@
+```
+{
+  "winner": "code_2",
+  "reasons": [
+    "Improved readability due to removal of duplicate method declaration",
+    "Simplified code structure",
+    "Extraction of delete logic into separate method (checkDelete) improves maintainability",
+    "Added @Nullable annotations for clarity"
+  ]
+}
+```

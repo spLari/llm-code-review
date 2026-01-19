@@ -1,0 +1,10 @@
+```
+{
+  "winner": "code_2",
+  "reasons": [
+    "Code 2 provides more functionality with additional methods like loadGroovyClass and getResourceAsStream",
+    "Code 2 has a more comprehensive design with abstract method __getGroovyClassLoader() which can be used to load classes and resources",
+    "Code 2 seems to be more maintainable and extendable with more specific and separate methods for different tasks"
+  ]
+}
+```

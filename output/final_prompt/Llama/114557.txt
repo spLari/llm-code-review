@@ -1,0 +1,10 @@
+```
+{
+  "winner": "code_2",
+  "reasons": [
+    "Code 2 has a more modular and reusable structure with the introduction of the `createChangePasswordRequest` method.",
+    "Code 2 reduces duplication and improves readability by extracting common logic into separate methods.",
+    "Code 2 has an additional test case `resetPassword_ReturnsUnprocessableEntity_NewPasswordSameAsOld` which provides more comprehensive coverage."
+  ]
+}
+```

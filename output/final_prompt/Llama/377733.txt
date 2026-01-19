@@ -1,0 +1,10 @@
+```
+{
+  "winner": "code_2",
+  "reasons": [
+    "Consistent use of GenericType for deserialization",
+    "Improved handling of response entity as a list",
+    "Better explicitness of importedIds size"
+  ]
+}
+```

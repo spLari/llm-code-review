@@ -1,0 +1,11 @@
+```
+{
+  "winner": "code_2",
+  "reasons": [
+    "Code 2 has improved naming with the introduction of `addImageImpl` and `removeImageImpl` methods, making the code more modular and easier to understand.",
+    "Code 2 handles resolution variant images, which is a new functionality not present in Code 1, making it more feature-rich and maintainable.",
+    "Code 2 reduces code duplication by extracting common logic into private methods (`addImageImpl` and `removeImageImpl`), improving maintainability.",
+    "Code 2 has better structure with a clear separation of concerns, making it easier to understand and extend."
+  ]
+}
+```

@@ -1,0 +1,10 @@
+```
+{
+  "winner": "code_2",
+  "reasons": [
+    "Code 2 has improved readability due to the addition of 'when' and 'then' comments, which make the test structure clearer.",
+    "Code 2 is more maintainable as the comments provide a clear separation of test setup and assertion.",
+    "There are no changes in naming or overall structure, but the added comments improve clarity."
+  ]
+}
+```

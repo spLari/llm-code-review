@@ -1,0 +1,10 @@
+```
+{
+  "winner": "code_2",
+  "reasons": [
+    "Improved method extraction: Code 2 extracts a separate method 'createNodes' which makes the code more modular and easier to understand.",
+    "Reduced nesting: By extracting a separate method, Code 2 reduces nesting and makes the code easier to read.",
+    "Simplified main method: Code 2's main method 'createNodeByTestCases' is simplified and focuses on its main responsibility of creating nodes."
+  ]
+}
+```

@@ -1,0 +1,10 @@
+```
+{
+  "winner": "code_2",
+  "reasons": [
+    "Improved encapsulation with the addition of a setter method",
+    "Better control over locale instance modification",
+    "Easier testing and dependency injection"
+  ]
+}
+```

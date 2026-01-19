@@ -1,0 +1,9 @@
+{
+  "winner": "code_2",
+  "reasons": [
+    "More descriptive local variable names (minU/maxU/minV/maxV) replace ambiguous f7/f8/f5/f6, improving readability and intent.",
+    "Buffer API in code_2 uses clearer method names (addVertex, setUv, setColor, setLight) vs terse vertex/uv/uv2/endVertex, making the call chain easier to understand.",
+    "Consistent naming and ordering of texture coordinates across vertices reduces cognitive load and lowers the chance of mistakes.",
+    "Overall the clearer identifiers and method names make the code easier to maintain and extend."
+  ]
+}

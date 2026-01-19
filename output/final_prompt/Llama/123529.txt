@@ -1,0 +1,10 @@
+```
+{
+  "winner": "code_2",
+  "reasons": [
+    "Improved method signature clarity with additional parameter for byteinst",
+    "Better handling of REX prefix emission with byteinst parameter",
+    "Reduced duplicated code with introduction of prefix(adr, reg, byteinst) method"
+  ]
+}
+```

@@ -1,0 +1,10 @@
+```
+{
+  "winner": "code_2",
+  "reasons": [
+    "Separation of Concerns: Code 2 separates the computation and node mapping into two distinct methods, making it easier to understand and test.",
+    "Single Responsibility Principle: Code 2 adheres more closely to the Single Responsibility Principle by having each method perform a single task.",
+    "Reusability: The refactored method in Code 2 allows for potential reuse in other parts of the codebase where node computation is necessary."
+  ]
+}
+```

@@ -1,0 +1,11 @@
+{
+    "winner": "code_2",
+    "reasons": [
+        "Code 2 extracts repeated request-building into a single helper (createChangePasswordRequest), removing duplication and making each test shorter and easier to read.",
+        "The helper has a clear name and overloads for defaults, so intent is explicit (tests express what they assert rather than how to construct the request).",
+        "Tests in Code 2 are more focused on behavior (status/view/model expectations) instead of boilerplate setup, improving clarity and readability.",
+        "Code 2 is easier to maintain and extend: changes to request parameters or CSRF handling need to be made in one place rather than in every test.",
+        "Code 2 demonstrates better test coverage/intent by adding an explicit test for a real failure case (new password same as old) and using view/model assertions, which aid future debugging and refactoring.",
+        "Minor remaining improvements (e.g., extract literal strings to constants, rename useCSRF to useCsrf) would apply to both, but Code 2 already establishes a cleaner structure to accommodate such refinements."
+    ]
+}

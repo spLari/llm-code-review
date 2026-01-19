@@ -1,0 +1,10 @@
+{
+  "winner": "code_2",
+  "reasons": [
+    "Adds a named helper (idRangeIndex) used by prepareRange, improving intent and readability versus inline arithmetic.",
+    "Reduces and batches writer.merge calls (dirty flag + per-range merge) which is clearer and more maintainable than merging on every id in the loop.",
+    "Avoids repeated prepareRange calls for IDs in the same range by detecting range changes, reducing duplication and work.",
+    "Overall control flow more explicit about range boundaries and state, making future changes (e.g., different merge strategy) easier to apply.",
+    "Minor complexity introduced (use of a sentinel key.setIdRangeIdx(1)) is a tradeoff but does not outweigh the clarity and performance improvements."
+  ]
+}

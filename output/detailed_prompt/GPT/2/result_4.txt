@@ -1,0 +1,11 @@
+{
+    "winner": "code_2",
+    "reasons": [
+        "Easier to understand: code_2 uses a clear constant (RDF_N) and a simple static initializer to populate the common cases, so the common path is straightforward to read versus code_1's manual array-resize logic.",
+        "Better naming and structure: code_2 uses more descriptive names (_rdf_n_uri, makeRDF_i) and factors URI creation into a single helper, which improves intent-revealing naming and reduces duplication.",
+        "Defensive checks: code_2 validates the input (throws on negative index) which makes error cases explicit and easier to diagnose.",
+        "Maintainability and extensibility: preallocation plus a single factory function (makeRDF_i) makes it easier to change the creation logic, initial capacity, or to add caching/thread-safety later without touching callers.",
+        "Readability: code_2 separates responsibilities (initialization, access, creation) clearly; the control flow in rdf_n is short and obvious compared with the growth-and-copy loop in code_1.",
+        "Preserves history safely: legacy dynamic-growth code is retained as commented-out reference in code_2 (so intent/history is visible) while the active implementation is cleaner—though this commented block should be removed or moved to version control if not needed."
+    ]
+}

@@ -1,0 +1,11 @@
+```
+{
+  "winner": "code_2",
+  "reasons": [
+    "Improved method extraction: Code 2 has a separate method `nextStringEndPos` which makes the code more modular and easier to understand.",
+    "Simplified loop logic: Code 2's loop logic is more straightforward and easier to follow.",
+    "Consistent error handling: Code 2 throws consistent exceptions, whereas Code 1 returns different error codes.",
+    "Better naming: Code 2's variable names, such as `endPos` and `limitedLen`, are more descriptive and clear."
+  ]
+}
+```

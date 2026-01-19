@@ -1,0 +1,11 @@
+```
+{
+  "winner": "code_2",
+  "reasons": [
+    "Extracted method configureFailedDbEntityOperation improves readability and maintainability",
+    "Reduced code duplication in failure handling",
+    "Added specific check for CrdbTransactionRetryException with clear documentation",
+    "Improved structure and organization of code"
+  ]
+}
+```

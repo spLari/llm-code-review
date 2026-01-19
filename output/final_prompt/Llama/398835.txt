@@ -1,0 +1,9 @@
+```
+{
+  "winner": "code_2",
+  "reasons": [
+    "Code 2 has a final variable 'fieldNames' in VarAccessModifier class which makes it more thread-safe and clear in its intention.",
+    "In method 'methodTraitName' in Code 2, variable 'mName' is more conventionally named with camelCase."
+  ]
+}
+```

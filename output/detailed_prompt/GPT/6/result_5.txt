@@ -1,0 +1,10 @@
+{
+  "winner": "code_2",
+  "reasons": [
+    "Easier to understand: capacity-calculation logic is extracted into a clearly named helper (calculateCapacity), making intent explicit vs. inlined conditional logic in code_1.",
+    "Better structure and naming: centralizing capacity calculation removes duplication and gives a single place to reason about/minimize the capacity semantics.",
+    "More maintainable/extendable: changes to capacity rules need to be made only in calculateCapacity; callers (ensureCapacityInternal, readObject) are simpler and less error-prone.",
+    "Improved safety/readability in deserialization: code_2 invokes SharedSecrets.getJavaOISAccess().checkArray(...) to validate the array size during readObject, which documents and enforces a security check that was absent in code_1.",
+    "Helper is static and pure: calculateCapacity is a small, testable function with no side effects, aiding unit testing and future refactoring."
+  ]
+}

@@ -1,0 +1,11 @@
+```
+{
+  "winner": "code_2",
+  "reasons": [
+    "Code 2 has more comprehensive filtering logic for fare leg rules, including area ID checks",
+    "Code 2 uses more advanced data structures like Multimap for better performance",
+    "Code 2 provides more granular control over rule application with separate filter methods (filterByNetworkId, filterByFromArea)",
+    "Code 2 includes additional functionality for handling stop areas with rules (findAreasWithRules, stopAreasWithRules)"
+  ]
+}
+```
