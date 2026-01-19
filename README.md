@@ -21,7 +21,11 @@ The repository includes datasets, LLM outputs, and scripts used to preprocess da
 │
 ├── output/
 │   ├── detailed_prompt/
+|   ├──── GPT
+|   ├──── Llama
 │   └── final_prompt/
+|   ├──── GPT
+|   ├──── Llama
 │
 ├── src/
 │   ├── remove_characters.py
